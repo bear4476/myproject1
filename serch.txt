@@ -1,0 +1,1 @@
+<li class="search"><a><input type="text" value="Search" onclick="(this.value=='Search' ? this.value = '' : null)" /></a></li>

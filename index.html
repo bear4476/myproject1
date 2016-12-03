@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>다요니졸작</title>           
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="demo.css?v=2">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").height(); 
+	var len = $("#focus ul li").length; 
+	var index = 0;
+	var picTimer;
+	
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span>" + (i+1) + "</span>";
+	}
+	btn += "</div>"
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+	
+
+	$("#focus .btn span").mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	$("#focus ul").css("height",sWidth * (len + 1));
+	
+	$("#focus ul li div").hover(function() {
+		$(this).siblings().css("opacity",0.7);
+	},function() {
+		$("#focus ul li div").css("opacity",1);
+	});
+	
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			if(index == len) { 
+				showFirPic();
+				index = 0;
+			} else {
+				showPics(index);
+			}
+			index++;
+		},3000); 
+	}).trigger("mouseleave");
+	
+	function showPics(index) { 
+		var nowLeft = -index*sWidth; 
+		$("#focus ul").stop(true,false).animate({"top":nowLeft},300); 
+		$("#focus .btn span").removeClass("on").eq(index).addClass("on")
+	}
+	
+	function showFirPic() { 
+		$("#focus ul").append($("#focus ul li:first").clone());
+		var nowLeft = -len*sWidth;
+		$("#focus ul").stop(true,false).animate({"top":nowLeft},300,function() {
+			$("#focus ul").css("top","0");
+			$("#focus ul li:last").remove();
+		}); 
+		$("#focus .btn span").removeClass("on").eq(0).addClass("on");
+	}
+	});
+
+</script>
+</head>
+
+<body>
+   <header>
+	<div class="logo"><a href="index.html"><img src="logo.png" border="0" /></a></div>
+	<div class="user">
+		<ul>
+			<li><a href="login.php">로그인</a></li>
+			<li><a>|</a></li>
+			<li><a href="#">회원가입</a></li>
+		</ul>
+	</div>
+	</header>
+	<nav><br />
+	<div id="header-wrapper">
+		<div class="wrapper">
+			<span class="title"><img src="logo_apple.png" border="0" /> &nbsp&nbsp</span>
+			<ul class="navigation">
+				<li><a href="index.html"><div class="point1">Home</div></a></li>
+				<li><a href="intro.html">iPhone 소개</a></li>
+				<li><a href="Test.html">iPhone 진단</a></li>
+				<li><a href="FirstStep.html">iPhone 초보</a></li>
+				<li><a href="#credits">사용자 Tip</a></li>
+				<li><a href="#credits">APP 추천</a></li>
+				<li><a href="#credits">ACC 추천</a></li>
+				<li><a href="board.php">게시판</a></li>
+			</ul>
+		</div>
+	</div></nav>
+<br />
+	<div class="wrapper">
+	<div id="focus">
+		<ul>			
+			<li>
+				<div style="left:0; top:0; width:977px; height:380px;"><a href="#" target="_blank"><img src="img/b01.jpg" alt="" /></a></div>
+			</li>			
+			<li>
+				<div style="left:0; top:0; width:977px; height:380px;"><a href="#" target="_blank"><img src="img/a2.jpg" alt="" /></a></div>
+			</li>
+			<li>
+				<div style="left:0; top:0; width:977px; height:380px;"><a href="#" target="_blank"><img src="img/a3.jpg" alt="" /></a></div>
+			</li>
+			<li>
+				<div style="left:0; top:0; width:977px; height:380px;"><a href="#" target="_blank"><img src="img/a4.jpg" alt="" /></a></div>
+			</li>
+			<li>
+				<div style="left:0; top:0; width:977px; height:380px;"><a href="#" target="_blank"><img src="img/a5.jpg" alt="" /></a></div>
+			</li>
+		</ul>
+	</div></div>
+	<div class="section1">
+		<div class="news">
+			<h1>iPhone News</h1>
+			<hr />
+			<ul>
+			 <li><a href="#">애플, 결국 오는 6월 아이폰5S 출시?</a></li>
+			 <li><a href="#">아이폰5, 가격방어선 무너지며 30만원대까지 가격↓</a></li>
+			 <li><a href="#">애플 OS X에서 자바7 못쓴다</a></li>
+			 <li><a href="#">호날두 '갤럭시 3' vs 메시 '아이폰'</a></li>
+			 <li><a href="#">피치 "애플 저가 아이폰, 삼성 실적 갉아먹을 듯"</a></li>
+			 <li><a href="#">애플, 보급형 아이폰 개발…중국 겨냥 연내 출시</a></li>
+			 <li><a href="#">애플, 저가폰 출시 않겠다 말한 적 없다</a></li>
+			</ul>
+		</div>
+		<div class="board">
+			<h1>iPhone Board</h1>
+			<hr />
+			<ul>
+			 <li><a href="#">반탈하려고 하는데요 하신분 ? </a></li>
+			 <li><a href="#">아이폰5 케이스 문의합니다! </a></li>
+			 <li><a href="#">이것도 불량제품인가요? </a></li>
+			 <li><a href="#">아이폰5s 나온다는데... </a></li>
+			 <li><a href="#">아이폰4s 시리는 어때요? </a></li>
+			 <li><a href="#">다들 mp3에 음악는 어떻게 넣나요? </a></li>
+			 <li><a href="#">아이폰 동기화 불편하지 않아요? ㅠㅠㅠㅠ</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="section2">
+		<div class="app">
+			<h1>iPhone App</h1>
+			<hr />
+			 <div class="any">
+			  <img src="app.png" border="0" />
+				<p><strong>애니팡</strong><br />
+				카테고리: 게임(2013.01.08)<br />
+				버전: 1.1.5<br />
+				크기: 32.5 MB<br />
+				개발자: Sundaytoz, INC</p>
+			 </div>
+			 <div class="dragon">
+			  <img src="app2.png" border="0" />
+				<p><strong>드래곤플라이트</strong><br />
+				카테고리: 게임(2013.01.08)<br />
+				버전: 1.1.5<br />
+				크기: 32.5 MB<br />
+				개발자: Sundaytoz, INC</p>
+			 </div>
+		</div>
+	</div>
+	<footer>
+		<div class="jo"><center>전남 여수시 둔덕동 전남대학교 여수캠퍼스 멀티미디어 (Tel: 061-659-1234)<br />
+		Copyright &copy; 2013 | <a href="index-3.html">Dayeon,Jo</a>&nbsp; Tel:010-9898-3530 E-mail:bear4476@nate.com &nbsp;</center></div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<?php
+	require_once('startsession.php');
+	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>다요니졸작</title>           
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="demo.css?v=2">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+   <?
+ require_once('header.php');
+?>
+	<nav><br />
+	<div id="header-wrapper">
+		<div class="wrapper">
+			<span class="title"><img src="logo_apple.png" border="0" /> &nbsp&nbsp</span>
+			<ul class="navigation">
+				<li><a href="index.php">Home</a></li>
+				<li><a href="intro.php"><div class="point1">iPhone 소개</div></a></li>
+				<li><a href="Test.php">iPhone 진단</a></li>
+				<li><a href="FirstStep.php">iPhone 초보</a></li>
+				<li><a href="#credits">사용자 Tip</a></li>
+				<li><a href="#credits">APP 추천</a></li>
+				<li><a href="#credits">ACC 추천</a></li>
+				<li><a href="board.php">게시판</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="nav_bar">
+		<ul>
+			<li><a href="intro.php"><strong>iPhone 이란?</a></li>
+			<li><a href="intro1.php">iPhone 1세대</a></li>
+			<li><a href="intro2.php">iPhone 3G & 3GS</a></li>
+			<li><a href="intro3.php">iPhone 4 & 4S</a></li>
+			<li><a href="intro4.php">iPhone 5</strong></a></li>
+		</ul>
+	</div>
+	</nav>
+<br />
+<div class="iPhone5">
+<h3><center>iPhone 5</center></h3>
+<p><center>아이폰5(iPhone 5)는 2012년 9월 12일 애플의 신제품 출시 발표회에서 처음으로 공개되었으며,<br /> 2012년 9월 14일부터 예약주문을 받은 뒤, 애플에서 2012년 9월 21일에 출시한 스마트폰이다.<br />이전의 아이폰들과는 달리 16:9비율의 4인치 레티나 디스플레이를 장착했으며, 통신방식으로는 LTE를 추가적으로 지원하고 있다.</center></p>
+<img src="img/iPhone5.png" />
+<table class="zebra">
+    <thead>
+    <tr>
+        <th></th>        
+        <th> </th>
+    </tr>
+    </thead>
+
+       
+    <tr>
+
+        <td>제조사</td>        
+        <td>애플(Apple)</td>
+    </tr>        
+    <tr>
+        <td>시리즈</td>         
+        <td>아이폰(iPhone)</td>
+
+    </tr>
+	<tr>
+		<td>슬로건</td>
+		<td>iPhone 이래 가장 획기적인 iPhone<br />
+ (The Biggest thing to happen to iPhone since iPhone)</td>
+	</tr>
+
+    <tr>
+        <td>형태</td>         
+        <td>바 형태(Bar)</td>
+    </tr>    
+    <tr>
+        <td>발매일</td> 
+        <td>2012년 9월 21일</td>
+    </tr>
+    <tr>
+        <td>운영체제</td> 
+        <td>출시 : iOS 6.0<br /> 최신 : iOS 6.0.2</td>
+    </tr>
+
+    <tr>
+        <td>전원</td> 
+        <td>내장형 리튬 이온 폴리머 배터리 1,440 mAh</td>
+    </tr>
+    <tr>
+        <td>통신 방식</td> 
+        <td>A1428 : 2중 대역 와이파이 IEEE 802.11 a/b/g/n (2.4/5.0 GHz)
+			 A-GPS,
+			 블루투스 4.0
+			 4중 대역 GSM/EDGE/GPRS (850/900 MHz/1.8/1.9 GHz),
+			 4중 대역 UMTS (850/900 MHz/1.9/2.1 GHz),
+			 HSDPA 14.4 Mbps 다운로드/384 Mbps 업로드,
+			 HSUPA 14.4 Mbps 다운로드/5.8 Mbps 업로드,
+			 HSPA+ 21 Mbps 다운로드/11 Mbps 업로드,
+			 2중 대역 LTE 100 Mbps 다운로드/37.5 Mbps 업로드 (밴드17 700 MHz/밴드4 1.7 GHz),
+			 A1429 GSM : 2중 대역 와이파이 IEEE 802.11 a/b/g/n (2.4/5.0 GHz),
+			 블루투스 4.0,
+			 4중 대역 GSM/EDGE/GPRS (850/900 MHz/1.8/1.9 GHz),
+			 4중 대역 UMTS (850/900 MHz/1.9/2.1 GHz),
+			 HSDPA 14.4 Mbps 다운로드/384 Mbps 업로드,
+			 HSUPA 14.4 Mbps 다운로드/5.8 Mbps 업로드,
+			 HSPA+ 21 Mbps 다운로드/11.5Mbps,
+			 3중 대역 LTE 100 Mbps 다운로드/37.5 Mbps 업로드 (밴드5 850 MHz/밴드3 1.8/밴드1 2.1 GHz),
+			 A1429 CDMA : 2중 대역 와이파이 IEEE 802.11 a/b/g/n (2.4/5.0 GHz),
+			 블루투스 4.0,
+			 3중 대역 CDMA (800/850 MHz/1.9 GHz),
+			 2중 대역 EV-DO Rev.A/Rev.B (850 MHz/1.9 GHz),
+			 5중 대역 LTE 100 Mbps 다운로드/37.5 Mbps 업로드 (밴드13 700/밴드5 850 MHz/밴드3 1.8/밴드25 1.9/밴드1 2.1 GHz)
+ </td>
+    </tr>    
+    <tr>
+        <td>연결방식</td> 
+        <td>USB 2.0 애플 라이트닝 8핀 3.5 mm 이어폰 잭</td>
+    </tr>
+
+    <tr>
+
+        <td>CPU</td> 
+        <td>애플 A6 1.3 GHz 듀얼 코어</td>
+    </tr>
+    <tr>
+        <td>GPU</td> 
+        <td>파워VR SGX543MP3</td>
+    </tr>
+	<tr>
+        <td>화면</td> 
+        <td>4" RGB 증착 레티나 디스플레이 640 x 1136,화소 밀도 326 ppi, 명암비 800:1, 밝기 500 cd m²²</td>
+    </tr>
+	<tr>
+        <td>입력</td> 
+        <td>정전식 터치 스크린</td>
+    </tr>
+	<tr>
+        <td>RAM</td> 
+        <td>1 GB eDRAM</td>
+    </tr>
+	<tr>
+        <td>내장 메모리</td> 
+        <td>16/32/64 GB</td>
+    </tr>
+	<tr>
+        <td>전면카메라</td> 
+        <td>130만 화소, 720p HD급 동영상 촬영, 30fps 동영상 촬영</td>
+    </tr>
+	<tr>
+        <td>후면카메라</td> 
+        <td>800만 화소, 1080p HD급 동영상 촬영, 30 fps 동영상 촬영, MF, LED 플래시</td>
+    </tr>
+	<tr>
+        <td>크기 & 무게</td> 
+        <td>가로 : 58.6mm, 세로 : 123.8mm, 두께 : 7.6mm, 112g </td>
+    </tr>
+</table>
+</div>
+<footer>
+		<div class="jo"><center>전남 여수시 둔덕동 전남대학교 여수캠퍼스 멀티미디어 (Tel: 061-659-1234)<br />
+		Copyright &copy; 2013 | <a href="index-3.html">Dayeon,Jo</a>&nbsp; Tel:010-9898-3530 E-mail:bear4476@nate.com &nbsp;</center></div>
+	</footer>
+</body>
+</html>

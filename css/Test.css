@@ -1,0 +1,100 @@
+@import url('reset.css');
+
+
+body {
+	background-color: #fff;
+	color: #666;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	margin: 0;
+}
+
+/* Headings */
+
+header {
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: bold;
+	color: #222;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #777;
+}
+
+
+
+/* Navigation */
+
+div.Test_bar  {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+div.Test_bar ul {
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #bbb;
+}
+
+div.Test_bar li {
+	float: left;
+	margin-right: 35px;
+}
+
+div.Test_bar li a {
+	color: #666;
+	font-weight: bold;
+}
+
+div.Test_bar li a:hover,
+div.Test_bar li a:focus,
+div.Test_bar li a.current {
+	color: #000;
+}
+
+div.Test_bar #indicator {
+	position: absolute;
+	left: 15px;
+	bottom: 5px;
+	width: 12px;
+	height: 7px;
+	background-image: url('../img/notch.png');
+}
+div.Test{
+	margin:50px 50px 50px 215px;
+}
+
+/* Content */
+
+#content section {
+	display: none;
+}
+
+#content section h3{
+	color:#2e6eac;
+}
+
+#content p {
+	margin-bottom: 1em;
+	max-width: 50em;
+	line-height: 1.6;
+}
+div.red{
+	color:#9f0000;
+	margin:0;
+	padding:0;
+}
+div.blue{
+	color:#3778b7;
+	margin:0;
+	padding:0;
+}
+div.callTest{
+	margin:-40px 0 10px 50px;
+}
